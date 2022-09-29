@@ -11,7 +11,7 @@
             <form name="form" action="/WebJava05/Controlador" method="post">
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Numero 1</label>
-                    <input type="number" name="num1" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <input type="number" name="num1" class="form-control" id="exampleInputEmail1">
                 </div>
                 <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Numero 2</label>

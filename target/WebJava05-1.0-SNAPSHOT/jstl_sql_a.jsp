@@ -32,7 +32,8 @@
                 <th scope="col">Nombre</th>
                 <th scope="col">Clave</th>
                 <th scope="col">Estado</th>
-                <th scope="col">Acciones</th>
+                <th scope="col"></th>
+                <th scope="col"></th>
                 </tr>
             </thead>
             <tbody>
@@ -43,20 +44,11 @@
                 <td><c:out value="${row.clave}"/></td>
                 <td><c:out value="${row.estado}"/></td>
                 
-                <td><form action="" method="post" class="row g-3">
-                        <div class="col-auto">
-                          <button type="submit" class="btn btn-warning mb-3">Editar</button>
-                        </div>
-                    </form>
-                    <form action="eliminar.jsp" method="post" class="row g-3">
-                        <div class="col-auto">
-                          <button type="submit" class="btn btn-danger mb-3">Eliminar</button>
-                            <%--<sql:query dataSource="${xcon}"
-                            sql="delete from t_usuarios where codigo=${row.codigo}"
-                            var="aa"/>--%>
-                            <c:out value="${row.nombre}"/>
-                        </div>
-                    </form>
+                <td>
+                    <button type="submit" class="btn btn-warning mb-3"><a href="modifica.jsp?id=${row.codigo}">Modificar</a></button>
+                </td>
+                <td>
+                    <button type="submit" class="btn btn-danger mb-3"><a href="elimina.jsp?id=${row.codigo}">Eliminar</a></button>
                 </td>
                 </tr>
                 </c:forEach>
